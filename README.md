@@ -1,5 +1,7 @@
 # Frontend Mentor - Order summary card
 
+My live link: https://order-summary-component-woad.vercel.app/
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
