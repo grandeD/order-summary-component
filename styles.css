@@ -1,0 +1,154 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: "Red Hat Display";
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+}
+h2 {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+strong {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+#hero-img {
+    width:100%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* box-shadow: right vertical blur spread color */
+.card {
+    margin-top: 4rem;
+    max-width: 27em;
+    max-height: 43em;
+    border-radius: 25px;
+    border: 0px;
+    overflow: hidden;
+    background-color:white;
+    box-shadow: 0px 20px 20px 2px hsla(224, 23%, 55%, 20%);
+    margin-inline: 1em;
+}
+ 
+.card-content {
+    margin-top: 2em;
+    margin-inline: min(8%, 3em);
+}
+
+
+#order-summary-text {
+    display: inline;
+    max-width: 20em;
+}
+
+
+.annual-plan-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    border: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    min-width: 100%;
+}
+
+#change-link {
+    width: 37%;
+    display:flex;
+    justify-content:flex-end;
+    padding-right: 1.5em;
+}
+
+#icon-music {
+    width: 28%;
+}
+
+#plan-info {
+    width: 35%;
+    line-height: 1.6;
+}
+
+a:link a:visited{
+    color: var(--bright-blue);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: hsla(245, 75%, 52%, 75%);
+    text-decoration: none;
+}
+
+.btn-font {
+    font-size: 16px;
+    font-family: "Red Hat Display";
+    font-weight: 700;
+}
+
+/* box-shadow: right vertical blur spread color */
+.payment-btn {
+    display: block;
+    border-radius: 12px;
+    border: 0;
+    padding: 1em;
+    width: 100%;
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    box-shadow: 0px 12px 20px 5px hsla(245, 75%, 52%, 20%);
+}
+
+.payment-btn:hover {
+    background-color: hsla(245, 75%, 52%, 75%);
+}
+
+.cancel-btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    margin-top: 1.5em;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    margin-bottom: 2.5em;
+}
+
+.cancel-btn:hover {
+    color: var(--dark-blue)
+}
+
+.attribution {
+    margin-top: 10em;
+}
